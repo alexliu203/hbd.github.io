@@ -1,1 +1,116 @@
-<h1> test </h1>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>建议与指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            padding: 3rem 0;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tip-category {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .tip-category i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+    <!-- 引入Font Awesome图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1>实用建议指南</h1>
+        <p>为您提供专业的建议与解决方案</p>
+    </header>
+
+    <div class="container">
+        <section class="card">
+            <div class="tip-category">
+                <i class="fas fa-leaf"></i>
+                <h2>健康生活建议</h2>
+            </div>
+            <ul>
+                <li>每天保持7-8小时优质睡眠</li>
+                <li>每周进行至少150分钟中等强度运动</li>
+                <li>保持均衡饮食，多吃蔬菜水果</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <div class="tip-category">
+                <i class="fas fa-laptop"></i>
+                <h2>工作效率建议</h2>
+            </div>
+            <ul>
+                <li>使用番茄工作法提高专注力</li>
+                <li>每天开始工作前制定优先级列表</li>
+                <li>定期进行工作空间整理</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <div class="tip-category">
+                <i class="fas fa-coins"></i>
+                <h2>财务规划建议</h2>
+            </div>
+            <ul>
+                <li>遵循50/30/20预算法则</li>
+                <li>建立应急储蓄基金</li>
+                <li>定期审查个人财务状况</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
